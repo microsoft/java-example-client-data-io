@@ -1,0 +1,68 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+repositories {
+    mavenCentral()
+}
+
+applicationDefaultJvmArgs = ["-Dendpoint=http://localhost:7400/deployr",
+                             "-Dusername=testuser",
+                             "-Dpassword=changeme"]
+                             
+
+dependencies {
+    compile "com.revolutionanalytics.deployr:jDeployR:7.4.4"
+    compile "commons-io:commons-io:2.4"
+}
+
+task argsOverride << {
+
+    /*
+     * Usage: gradlew run -Pendpoint=http://dserver:dport/deployr
+     */
+
+    if(project.hasProperty('endpoint')) {
+        applicationDefaultJvmArgs[0] = "-Dendpoint=${endpoint}"
+        println "Project property (DeployR endpoint) override: " +
+                                "${applicationDefaultJvmArgs[0]}"
+    } else {
+        println "Project property (DeployR endpoint) default: " +
+                                "${applicationDefaultJvmArgs[0]}"
+    }
+
+    if(project.hasProperty('username')) {
+        applicationDefaultJvmArgs[2] = "-Dusername=${username}"
+        println "Project property (DeployR username) override: " +
+                                "${applicationDefaultJvmArgs[2]}"
+    } else {
+        println "Project property (DeployR username) default: " +
+                                "${applicationDefaultJvmArgs[2]}"
+    }
+
+    if(project.hasProperty('password')) {
+        applicationDefaultJvmArgs[3] = "-Dpassword=${password}"
+        println "Project property (DeployR password) override: [HIDDEN]"
+    } else {
+        println "Project property (DeployR password) default: [HIDDEN]"
+    }
+
+}
+
+tasks.run.dependsOn argsOverride
+
+jar {
+    baseName = 'java-example-data-io'
+    version = '7.4.0'
+}
+
+task execute(type: JavaExec) {
+    mainClassName = System.getProperty("testClass")
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}

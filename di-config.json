@@ -1,0 +1,166 @@
+{
+    "app-install": {
+        "repository": [
+            {
+                "file": {
+                    "filename": "dataIO.R",
+                    "directory": "example-data-io",
+                    "descr": "Uploaded from DeployR CLI."
+                },
+                "permissions": {
+                    "restricted": null,
+                    "shared": true,
+                    "published": false
+                }
+            },
+            {
+                "file": {
+                    "filename": "hipStar.dat",
+                    "directory": "example-data-io",
+                    "descr": "Uploaded from DeployR CLI."
+                },
+                "permissions": {
+                    "restricted": null,
+                    "shared": true,
+                    "published": false
+                }
+            },
+            {
+                "file": {
+                    "filename": "hipStar.rData",
+                    "directory": "example-data-io",
+                    "descr": "Uploaded from DeployR CLI."
+                },
+                "permissions": {
+                    "restricted": null,
+                    "shared": true,
+                    "published": false
+                }
+            }
+        ]
+    },
+    "app-run": {
+        "requireAuthentication": true,
+        "tutorial": {
+            "help": "https://github.com/themarchoffolly/java-example-client-data-io",
+            "topics": [
+                {
+                    "topic": "Authenticated Discrete Execution Data I/O",
+                    "menu": [
+                        {
+                            "item": "EncodedDataInBinaryFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.discrete.exec.EncodedDataInBinaryFileOut"
+                        },
+                        {
+                            "item": "ExternalDataInDataFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.discrete.exec.ExternalDataInDataFileOut"
+                        },
+                        {
+                            "item": "RepoFileInEncodedDataOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.discrete.exec.RepoFileInEncodedDataOut"
+                        },
+                        {
+                            "item": "RepoFileInGraphicsPlotOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.discrete.exec.RepoFileInGraphicsPlotOut"
+                        },
+                        {
+                            "item": "RepoFileInRepoFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.discrete.exec.RepoFileInRepoFileOut"
+                        },
+                        {
+                            "item": "MultipleDataInMultipleDataOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.discrete.exec.MultipleDataInMultipleDataOut"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Authenticated Stateful Execution Data I/O",
+                    "menu": [
+                        {
+                            "item": "EncodedDataInBinaryFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.exec.EncodedDataInBinaryFileOut"
+                        },
+                        {
+                            "item": "LocalDataInEncodedDataOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.exec.LocalDataInEncodedDataOut"
+                        },
+                        {
+                            "item": "ExternalDataInDataFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.exec.ExternalDataInDataFileOut"
+                        },
+                        {
+                            "item": "RepoFileInEncodedDataOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.exec.RepoFileInEncodedDataOut"
+                        },
+                        {
+                            "item": "RepoFileInGraphicsPlotOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.exec.RepoFileInGraphicsPlotOut"
+                        },
+                        {
+                            "item": "RepoFileInRepoFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.exec.RepoFileInRepoFileOut"
+                        },
+                        {
+                            "item": "MultipleDataInMultipleDataOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.exec.MultipleDataInMultipleDataOut"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Authenticated Stateful Preload & Execution Data I/O",
+                    "menu": [
+                        {
+                            "item": "EncodedDataInBinaryFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.preload.EncodedDataInBinaryFileOut"
+                        },
+                        {
+                            "item": "ExternalDataInDataFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.preload.ExternalDataInDataFileOut"
+                        },
+                        {
+                            "item": "RepoFileInEncodedDataOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.preload.RepoFileInEncodedDataOut"
+                        },
+                        {
+                            "item": "RepoFileInGraphicsPlotOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.preload.RepoFileInGraphicsPlotOut"
+                        },
+                        {
+                            "item": "RepoFileInRepoFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.preload.RepoFileInRepoFileOut"
+                        },
+                        {
+                            "item": "MultipleDataInMultipleDataOut",
+                            "args": "com.revo.deployr.client.example.data.io.auth.stateful.preload.MultipleDataInMultipleDataOut"
+                        }
+                    ]
+                },
+                {
+                    "topic": "Anonymous Discrete Execution Data I/O",
+                    "menu": [
+                        {
+                            "item": "EncodedDataInBinaryFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.anon.discrete.exec.EncodedDataInBinaryFileOut"
+                        },
+                        {
+                            "item": "ExternalDataInDataFileOut",
+                            "args": "com.revo.deployr.client.example.data.io.anon.discrete.exec.ExternalDataInDataFileOut"
+                        },
+                        {
+                            "item": "RepoFileInEncodedDataOut",
+                            "args": "com.revo.deployr.client.example.data.io.anon.discrete.exec.RepoFileInEncodedDataOut"
+                        },
+                        {
+                            "item": "RepoFileInGraphicsPlotOut",
+                            "args": "com.revo.deployr.client.example.data.io.anon.discrete.exec.RepoFileInGraphicsPlotOut"
+                        },
+                        {
+                            "item": "MultipleDataInMultipleDataOut",
+                            "args": "com.revo.deployr.client.example.data.io.anon.discrete.exec.MultipleDataInMultipleDataOut"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
