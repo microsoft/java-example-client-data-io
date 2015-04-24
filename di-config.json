@@ -42,7 +42,7 @@
     "app-run": {
         "requireAuthentication": true,
         "tutorial": {
-            "help": "https://github.com/themarchoffolly/java-example-client-data-io",
+            "help": "https://github.com/deployr/java-example-client-data-io",
             "topics": [
                 {
                     "topic": "Authenticated Discrete Execution Data I/O",
