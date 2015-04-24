@@ -38,7 +38,7 @@ The set of data input and output types currently demonstrated by these examples 
 
 ## Tutorial: Running the Examples
 
-Use the DeployR CLI to download and run the `java-example-client-data-io` examples.
+Use the [DeployR CLI](https://github.com/deployr/deployr-cli) to download and run the `java-example-client-data-io` examples.
 
 
 ## Tutorial: Example-by-Example
