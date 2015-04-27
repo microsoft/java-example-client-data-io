@@ -168,7 +168,7 @@ public class EncodedDataInBinaryFileOut {
             URL url =
                 new URL("http://astrostatistics.psu.edu/datasets/HIP_star.dat");
             InputStream is = url.openStream();
-            RDataTable table = RDataFactory.createDataTable(is, "\\s+", true);
+            RDataTable table = RDataFactory.createDataTable(is, "\\s+", true, true);
             df = table.asDataFrame("hip");
 
         } catch(Exception ex) {

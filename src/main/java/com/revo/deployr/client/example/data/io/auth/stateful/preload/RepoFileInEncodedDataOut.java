@@ -163,7 +163,7 @@ public class RepoFileInEncodedDataOut {
                      * simplify working with data values within the object.
                      */
                     RDataTable table =
-                        RDataFactory.createDataTable((RDataFrame) rData);
+                        RDataFactory.createDataTable(rData);
                 } else
                 if(rData instanceof RNumericVector) {
                     log.info("[  DATA OUTPUT   ] Retrieved DeployR-encoded R " +
@@ -178,7 +178,7 @@ public class RepoFileInEncodedDataOut {
                      * simplify working with data values within the object.
                      */
                     RDataTable table =
-                        RDataFactory.createDataTable((RNumericVector) rData);
+                        RDataFactory.createDataTable(rData);
                 } else
                 if(rData instanceof RStringVector) {
                     log.info("[  DATA OUTPUT   ] Retrieved DeployR-encoded R " +
@@ -193,7 +193,7 @@ public class RepoFileInEncodedDataOut {
                      * simplify working with data values within the object.
                      */
                     RDataTable table =
-                        RDataFactory.createDataTable((RStringVector) rData);
+                        RDataFactory.createDataTable(rData);
                 } else {
                     log.info("Unexpected DeployR-encoded R object returned, " +
                         "object name=" + rData.getName() + ", encoding=" +

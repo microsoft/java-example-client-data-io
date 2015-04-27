@@ -14,7 +14,7 @@ applicationDefaultJvmArgs = ["-Dendpoint=http://localhost:7400/deployr",
                              
 
 dependencies {
-    compile "com.revolutionanalytics.deployr:jDeployR:7.4.5"
+    compile "com.revolutionanalytics.deployr:jDeployR:7.4.7"
     compile "commons-io:commons-io:2.4"
 }
 

@@ -180,7 +180,7 @@ public class MultipleDataInMultipleDataOut {
                      * simplify working with data values within the object.
                      */
                     RDataTable table =
-                        RDataFactory.createDataTable((RDataFrame) rData);
+                        RDataFactory.createDataTable(rData);
                 } else
                 if(rData instanceof RNumericVector) {
                     log.info("[  DATA OUTPUT   ] Retrieved DeployR-encoded R " +
