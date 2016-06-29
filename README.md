@@ -107,7 +107,7 @@ The R scripts and data files used by these example application are
 *not bundled* by default within the DeployR 7.4 repository.
 
 The simplest way to deploy these files for use when running these
-example applications is to use the [DeployR CLI](https://github.com/deployr/cli).
+example applications is to use the [DeployR CLI](https://github.com/microsoft/cli).
 The CLI will automatically deploy the file dependencies to the DeployR
 repository before running the examples.
 
@@ -126,7 +126,7 @@ purposes you can use the DeployR Repository Manager as follows:
 
 ## License ##
 
-Copyright (C) 2010-2015 by Revolution Analytics Inc.
+Copyright (C) 2010-2016, Microsoft Corporation
 
 This program is licensed to you under the terms of Version 2.0 of the
 Apache License. This program is distributed WITHOUT

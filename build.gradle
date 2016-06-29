@@ -8,13 +8,13 @@ repositories {
     mavenCentral()
 }
 
-applicationDefaultJvmArgs = ["-Dendpoint=http://localhost:7400/deployr",
+applicationDefaultJvmArgs = ["-Dendpoint=http://localhost:8050/deployr",
                              "-Dusername=testuser",
-                             "-Dpassword=changeme"]
+                             "-Dpassword=TESTUSER_PASSWORD"]
                              
 
 dependencies {
-    compile "com.revolutionanalytics.deployr:jDeployR:7.4.7"
+    compile "com.microsoft.deployr:jDeployR:8.0.5"
     compile "commons-io:commons-io:2.4"
 }
 
@@ -55,7 +55,7 @@ tasks.run.dependsOn argsOverride
 
 jar {
     baseName = 'java-example-data-io'
-    version = '7.4.0'
+    version = '8.0.5'
 }
 
 task execute(type: JavaExec) {
